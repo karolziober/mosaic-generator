@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>M O S A I C</title>
+  </head>
+  <body>
+    <main>
+      <header class="top-section">
+        <h1 class="top-section__title">Mosaic</h1>
+      </header>
+
+      <!-- CANVAS SECTION -->
+      <section class="preview-area">
+        <canvas id="canvas" width="3000" height="3000" class="canvas"></canvas>
+      </section>
+      <!-- CANVAS SECTION -->
+
+      <section class="control-area">
+        <div class="control-area__sliders">
+          <div class="control-area__size">
+            <label for="size" class="slider__label">Square Size</label>
+            <input
+              type="range"
+              class="slider__size"
+              name="size"
+              id="size"
+              min="10"
+              max="300"
+            />
+          </div>
+          <div class="control-area__density">
+            <label for="density" class="slider__label">Square Density</label>
+            <input
+              type="range"
+              class="slider__density"
+              name="density"
+              id="density"
+              min="1"
+              max="100"
+            />
+          </div>
+        </div>
+        <div class="control-area__buttons">
+          <button class="control-area__button" type="button" id="regenerate">
+            Regenerate
+          </button>
+          <button class="control-area__button" type="button" id="export">
+            Export
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
