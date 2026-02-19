@@ -34,6 +34,7 @@ canvas {
 /* Components */
 
 .top-section__title {
+  font-size: clamp(2rem, 5vw, 6rem);
   letter-spacing: 1rem;
   text-indent: 1rem;
 }
@@ -54,9 +55,10 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1rem;
 }
 .slider__label {
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .slider__control {
@@ -90,7 +92,7 @@ canvas {
 
 .control-area__button {
   font-family: inherit;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   background-color: var(--button-primary);
   color: var(--button-secondary);
   border: 0;
@@ -99,14 +101,19 @@ canvas {
   transition: 0.3s ease-in-out;
 }
 
-.control-area__button:hover {
+/* .control-area__button:hover {
   background-color: var(--button-secondary);
   color: var(--button-primary);
-}
+} */
 
 @media (min-width: 47.8125rem) {
   canvas {
     display: flex;
     max-width: 30%;
+  }
+
+  .control-area__button:hover {
+    background-color: var(--button-secondary);
+    color: var(--button-primary);
   }
 }
